@@ -1,7 +1,3 @@
-Of course. Here is the final `README.md` with the correct repository URL.
-
----
-
 # StormCritSDK 🚀
 
 [![Swift Package Manager](https.img.shields.io/badge/Swift_Package_Manager-compatible-brightgreen.svg)](https://swift.org/package-manager/)
