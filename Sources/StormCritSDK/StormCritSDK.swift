@@ -27,8 +27,10 @@ extension StormCritSDK {
         }
     }
     
-    public static func sendEvent(event: StormCritEvent, additionalInfo: [String: String] = [:]) async {
-        await Self.instance.sendEventInternal(event: event, additionalInfo: additionalInfo)
+    public static func sendEvent(event: StormCritEvent, additionalInfo: [String: String] = [:]) {
+        Task {
+            await Self.instance.sendEventInternal(event: event, additionalInfo: additionalInfo)
+        }
     }
 }
 
