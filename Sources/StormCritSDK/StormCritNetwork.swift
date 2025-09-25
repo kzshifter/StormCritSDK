@@ -48,7 +48,7 @@ final internal class StormCritNetwork: Sendable {
         
         request.httpBody = try? self.buildBody(with: [
             "app": AppInfoHelper.getAppName(),
-            "event": event.rawValue,
+            "event": event.name,
             "additional_info": additionalInfo,
             "base_app_info": AppInfoHelper.getAppInfo()
         ])

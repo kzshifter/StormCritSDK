@@ -39,6 +39,18 @@ public enum StormCritEvent: RawRepresentable, Codable, Sendable {
         case .custom(let value): return value
         }
     }
+    
+    public var name: String {
+        switch self {
+        case .failGeneration: "Fail Generation"
+        case .failPresentPaywall: "Fail Present Paywall"
+        case .failPayment: "Fail Payment"
+        case .coldStartTimeout: "Cold Start Timeout"
+        case .applicationNotResponding: "Application Not Responding"
+        case .serverError: "Server Error"
+        case .custom(let string): string
+        }
+    }
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
