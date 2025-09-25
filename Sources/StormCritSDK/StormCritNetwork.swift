@@ -88,7 +88,7 @@ final internal class StormCritNetwork: Sendable {
     
     private func buildRequest(with url: URL) -> URLRequest {
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
+        request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue(self.token, forHTTPHeaderField: "Authorization")
         return request
