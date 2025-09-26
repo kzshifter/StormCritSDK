@@ -96,6 +96,8 @@ The SDK provides the following list of pre-defined events (`StormCritEvent`):
 -   `.coldStartTimeout`
 -   `.applicationNotResponding`
 -   `.serverError`
+-   `.failedToLoadPaywall`
+-   `.outOfBalance`
 -   `.custom(String)` - for any other cases.
 
 ## License
