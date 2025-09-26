@@ -14,6 +14,8 @@ public enum StormCritEvent: RawRepresentable, Codable, Sendable {
     case coldStartTimeout
     case applicationNotResponding
     case serverError
+    case failedToLoadPaywall
+    case outOfBalance
     case custom(String)
 
     public init?(rawValue: String) {
@@ -36,6 +38,8 @@ public enum StormCritEvent: RawRepresentable, Codable, Sendable {
         case .coldStartTimeout: return "coldStartTimeout"
         case .applicationNotResponding: return "applicationNotResponding"
         case .serverError: return "serverError"
+        case .failedToLoadPaywall: return "failedToLoadPaywall"
+        case .outOfBalance: return "outOfBalance"
         case .custom(let value): return value
         }
     }
@@ -48,6 +52,8 @@ public enum StormCritEvent: RawRepresentable, Codable, Sendable {
         case .coldStartTimeout: "Cold Start Timeout"
         case .applicationNotResponding: "Application Not Responding"
         case .serverError: "Server Error"
+        case .failedToLoadPaywall: "Failed To Load Paywall"
+        case .outOfBalance: "Out Of Balance"
         case .custom(let string): string
         }
     }
