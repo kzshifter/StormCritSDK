@@ -29,7 +29,7 @@ The SDK is designed to be a simple bridge between your iOS application and a mon
 You can add `StormCritSDK` to your project using Swift Package Manager. In Xcode, select `File` > `Add Packages...` and enter the repository URL:
 
 ```
-https://github.com/kzshifter/StormCritSDK
+https://github.com/superteamstrm/StormCritSDK
 ```
 
 ## Usage
